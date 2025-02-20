@@ -221,3 +221,19 @@ export const PageAction = styled.div`
     }
   }
 `;
+
+export const FilterList = styled.div`
+  margin: 1rem 0;
+
+  button {
+    outline: none;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    margin: 0 0.2rem;
+
+    &:nth-child(${(props) => props.$active + 1}) {
+      background: orange;
+    }
+  }
+`;
