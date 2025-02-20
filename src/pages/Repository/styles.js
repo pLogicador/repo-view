@@ -201,3 +201,23 @@ export const IssuesList = styled.ul`
     }
   }
 `;
+
+export const PageAction = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    outline: none;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: white;
+    padding: 0.7rem;
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+`;
